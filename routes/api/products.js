@@ -7,6 +7,10 @@ router
   .get(productsController.findAll)
   .post(productsController.create);
 
+router
+  .route("/cart")
+  .get(productsController.findCart);
+
 // Matches with "/api/products/:id"
 router
   .route("/:id")
@@ -14,7 +18,7 @@ router
   .put(productsController.update)
   .delete(productsController.remove);
 
-// Matches with "/api/products/category"
+// Matches with "/api/category"
 router
   .route("/category")
   .get(productsController.findByClass)

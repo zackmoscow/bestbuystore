@@ -1,13 +1,13 @@
 import React from "react";
 import { Col, Row, Container } from "../components/Grid";
-import TopProducts from "../components/TopProducts";
+import Search from "../components/Search";
 
 const Home = () => {
   return (
     <Container fluid>
       <Row>
-        <Col size="md-6">
-          <TopProducts />
+        <Col size="md-12">
+          <Search />
         </Col>
       </Row>
     </Container>
